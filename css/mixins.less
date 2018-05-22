@@ -1,0 +1,39 @@
+
+/* Parametric mixins for font attributes */
+
+.headerFontAttributes(@fontColor; @fontSize; @lineHeight) {
+    color: @fontColor; // this uses our font color
+    font-size: @fontSize; // this uses our font size
+    font-weight: bold; // this uses no arguments... not everything has to be dynamic!
+    text-transform: uppercase;
+    line-height: @lineHeight; // this uses our line height
+}
+.boxPropertiesAttributes(@borderRadius; @boxShadow; @shadowColor) {
+    -moz-border-radius: @borderRadius;
+    -webkit-border-radius: @borderRadius;
+    border-radius: @borderRadius; // this controls the radius size
+    -webkit-box-shadow: @boxShadow @shadowColor; // this uses a color to control the color of the shadow
+    box-shadow: @boxShadow @shadowColor;
+}
+.paragraphAttributes(@color; @fontFamily; @fontSize) {
+    color: @color;
+    font-family: @fontFamily;
+    font-size: @fontSize;
+    line-height: @fontSize / 2;
+}
+.emphasisAttributes(@color; @fontFamily; @fontSize) {
+    color: @color;
+    font-family: @fontFamily;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: @fontSize;
+    line-height: @fontSize / 1.2;
+}
+.sectionAttributes(@color; @fontFamily; @fontSize) {
+    color: @color;
+    font-family: @fontFamily;
+    font-size: @fontSize;
+    line-height: @fontSize / 1.8;
+}
+
+/* End parametric mixins for font attributes */
