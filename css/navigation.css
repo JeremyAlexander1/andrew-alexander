@@ -19,10 +19,11 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: #f4f4f4;
-  position: fixed;
-  top: 0;    
+    overflow-y: auto;
+    max-height: 100vh;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
 }
 
 .topnav a {
@@ -30,9 +31,9 @@ body {
   display: block;
   color: #8C4528;
   text-align: center;
-  padding: 16px;
+  padding: 20px;   
   text-decoration: none;
-  font-size: 12px;
+  font-size: 18px;    
 }
 
 .active {
@@ -54,7 +55,7 @@ body {
     border: none;
     outline: none;
     color: white;
-    padding: 6px 8px;
+    padding: 10px 12px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
